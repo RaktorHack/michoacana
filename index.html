@@ -1,130 +1,63 @@
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-<div class="wrapper">
 
-  <h2>Nuestro Menú</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="buttons-container">
-    <a href="#" class="button button--is-active" data-target="pizzaMenu">Baguettes</a>
-    <a href="#" class="button" data-target="coffeeMenu">Pastas</a>
-    <a href="#" class="button" data-target="noodlesMenu">Ensaladas</a>
-  </div>
+    <title>Catálogo</title>
 
-  <!-- Start Pizza Menu -->
-  <div class="menu menu--is-visible" id="pizzaMenu">
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Greek Pizza</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$22</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Cheese Pizza</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$20</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+        body {
+            margin: 0;
+            padding: 20px 0;
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Neapolitan Pizza</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$18</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+        .catalogo {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Pepperoni Pizza</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$15</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
-  </div> <!-- End Pizza Menu -->
+        .catalogo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 auto 20px auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
 
-  <!-- Start Coffee Menu -->
-  <div class="menu" id="coffeeMenu">
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Cappuccino</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$4</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+        @media (max-width: 600px) {
+            body {
+                padding: 10px 0;
+            }
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Iced Coffee</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$5</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+            .catalogo img {
+                margin-bottom: 10px;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Café Latte</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$3</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+<body>
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Espresso</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$4</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
-  </div> <!-- End Coffee Menu -->
+    <main class="catalogo">
 
-  <!-- Start Noodles Menu -->
-  <div class="menu" id="noodlesMenu">
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Chicken Noodles</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$16</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+        <img src="menu1.jpg" alt="Menú 1">
+        <img src="menu2.jpg" alt="Menú 2">
+        <img src="menu3.jpg" alt="Menú 3">
+        <img src="menu4.jpg" alt="Menú 4">
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Egg Noodles</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$12</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
+    </main>
 
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Veg Noodles</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$10</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
-
-    <div class="item">
-      <div class="item__header">
-        <h3 class="item__title">Chuck Norris Noodles</h3>
-        <span class="item__dots"></span>
-        <span class="item__price">$20</span>
-      </div>
-      <p class="item__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quos harum officia eaque nobis ut.</p>
-    </div>
-  </div> <!-- End Noodles Menu -->
-
-</div> <!-- End Wrapper -->
+</body>
+</html>
+```
